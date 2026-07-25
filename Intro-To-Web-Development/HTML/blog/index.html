@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alok's Blog</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Alok's Blog</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
+  <button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+</header>
+
+<main>
+  <section>
+    <h2>Latest Posts</h2>
+
+    <article class="post">
+      <h3>My First Post</h3>
+      <p class="date"><time datetime="2026-07">July 2026</time></p>
+      <img src="images/dark.jpg" alt="Dark Ages" />
+      <p>I'm getting started with web development and this is my first blog!</p>
+      <button onclick="likePost(this)">❤️ Like (<span>0</span>)</button>
+    </article>
+
+    <article class="post">
+      <h3>What I Learned Today</h3>
+      <p class="date"><time datetime="2026-07">July 2026</time></p>
+      <img src="images/hell.jpg" alt="Hell Knight" />
+      <p>I learned about HTML structure, links, and building pages.</p>
+      <button onclick="likePost(this)">❤️ Like (<span>0</span>)</button>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Alok</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
