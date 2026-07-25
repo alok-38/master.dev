@@ -1,0 +1,103 @@
+# ------------------------------
+# 📦 Node modules
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------
+# 🔐 Environment variables
+# ------------------------------
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# ------------------------------
+# 🏗 Build outputs
+# ------------------------------
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+
+# ------------------------------
+# 🧪 Testing
+# ------------------------------
+coverage/
+.nyc_output/
+
+# ------------------------------
+# 🧰 Logs
+# ------------------------------
+logs/
+*.log
+
+# ------------------------------
+# 🧑‍💻 OS & Editor files
+# ------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# 📁 Temporary files
+# ------------------------------
+tmp/
+temp/
+*.tmp
+
+# ------------------------------
+# 🧱 Cache directories
+# ------------------------------
+.cache/
+.parcel-cache/
+.eslintcache
+
+# ------------------------------
+# 🐳 Docker (optional)
+# ------------------------------
+docker-compose.override.yml
+
+# ------------------------------
+# 🗄 Database files
+# ------------------------------
+*.sqlite
+*.sqlite3
+*.db
+
+# ------------------------------
+# 🔑 Secrets & keys
+# ------------------------------
+*.pem
+*.key
+
+# ------------------------------
+# 📦 Package manager lockfiles (optional)
+# Keep ONE depending on your team preference
+# ------------------------------
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ------------------------------
+# 🚀 Deployment
+# ------------------------------
+.vercel/
+.netlify/
+
+# ------------------------------
+# 📊 Misc
+# ------------------------------
+*.tgz
+*.zip

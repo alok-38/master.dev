@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Learn HTML</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#tags">Tags</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>What is HTML?</h2>
+        <p>
+          HTML (HyperText Markup Language) is not a programming language. It is
+          used to structure content on the web using elements called tags.
+        </p>
+      </section>
+
+      <!-- Tags Section -->
+      <section id="tags">
+        <h2>Common HTML Tags</h2>
+        <ul>
+          <li><strong>&lt;h1&gt;</strong> - Heading</li>
+          <li><strong>&lt;p&gt;</strong> - Paragraph</li>
+          <li><strong>&lt;a&gt;</strong> - Link</li>
+          <li><strong>&lt;img&gt;</strong> - Image</li>
+        </ul>
+      </section>
+
+      <!-- Quiz Section -->
+      <section id="quiz">
+        <h2>Quick Quiz</h2>
+        <p>Is HTML a programming language?</p>
+        <button onclick="checkAnswer(true)">Yes</button>
+        <button onclick="checkAnswer(false)">No</button>
+
+        <p id="result"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Learn Web Dev</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
