@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
 /* Body */
 body {
   font-family: Arial, sans-serif;
@@ -12,6 +20,14 @@ body {
   background: #f4f4f4;
   color: #333;
   transition: 0.3s;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h2 {
+    margin-bottom: .5rem;
 }
 
 /* Dark mode */
