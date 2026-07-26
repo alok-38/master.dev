@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  margin: 2rem 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 500;
+  color: #363434;
+  font-size: 1.75rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 2.5rem;
+}
+
+.nav-links a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #363434;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+article {
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.article-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article-text:not(.article-text:last-child) {
+  margin-bottom: 1rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Make story-4 take 1 column */
+.story-4 {
+  grid-column: span 1;
+}
+
+/* Make story-5 take 2 columns */
+.story-5 {
+  grid-column: span 2;
+}
