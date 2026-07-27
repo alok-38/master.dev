@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,4 +21,27 @@ a,
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+.main-nav {
+  background-color: #43281c;
+  color: #fbf2c0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+
+.logo {
+  height: 30px;
+  width: 25px;
+  object-fit: cover;
 }
