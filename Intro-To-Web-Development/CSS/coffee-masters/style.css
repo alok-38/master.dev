@@ -69,6 +69,7 @@ section {
   padding: 1rem;
   width: 49.5%;
   padding: 2rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .order__title {
@@ -108,7 +109,7 @@ section {
 .order__details {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 header,
@@ -133,7 +134,7 @@ button {
 
 /* Hover effect */
 button:hover {
-  background-color: #5a3828; /* slightly lighter */
+  background-color: #5a3828;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -173,3 +174,132 @@ button:disabled {
 .order__item:last-child {
   padding-top: 1rem;
 }
+
+button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: 0 auto 1rem auto;
+}
+
+.payment__form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  padding: 2rem;
+  border: unset;
+  border: 2px solid #5a3828;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #5a3828;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+
+  /* smooth transitions */
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Hover effect */
+input:hover {
+  border-color: #43281c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus (important for accessibility) */
+input:focus {
+  outline: none; /* remove default */
+  border-color: #c8a27a;
+  box-shadow: 0 0 0 3px rgba(200, 162, 122, 0.4);
+}
+
+/* Active (while clicking) */
+input:active {
+  transform: scale(0.99);
+}
+
+/* Optional: disabled */
+input:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+fieldset:first-child {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: none;
+}
+
+.payment__input--expiry {
+  width: 25%;
+  margin-top: 1rem;
+}
+
+/* ===== TABLE BASE ===== */
+.order__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.order__table thead {
+  border-bottom: 4px solid #43281c;
+}
+
+.order__table th {
+  text-align: left;
+  padding: 1rem 0;
+  color: #43281c;
+  letter-spacing: 1px;
+}
+
+.order__table td {
+  padding: 1rem 0;
+  vertical-align: middle;
+}
+
+.order__table tbody tr:not(:last-child) {
+  border-bottom: 2px solid #ccc;
+}
+
+/* Align right */
+.text-right {
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Total row */
+.order__total-row {
+  border-top: 4px solid #43281c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order__table tbody tr:hover {
+  background-color: rgba(67, 40, 28, 0.05);
+}
+

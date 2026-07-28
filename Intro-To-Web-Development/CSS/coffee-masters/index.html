@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body class="page">
     <header class="header">
@@ -81,6 +82,7 @@
                 class="payment__input payment__input--name"
                 autocomplete="cc-name"
                 required
+                placeholder="Alok"
               />
             </fieldset>
             <fieldset class="payment__fieldset">
@@ -114,7 +116,16 @@
         </section>
       </div>
     </main>
-    <table></table>
+    <table id="orderTable" class="order__table">
+      <thead>
+        <tr>
+          <th>Qty</th>
+          <th>Item</th>
+          <th style="text-align: right">Price</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
     <button type="submit">Place order</button>
   </body>
 </html>
