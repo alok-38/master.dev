@@ -24,99 +24,95 @@
 
     <main class="main">
       <!-- Items Section -->
-      <section class="order" id="order">
-        <h2 class="order__title">Items</h2>
-
-        <ul class="order__list">
-          <li class="order__item">
-            <div class="order__item-info">
-              <span class="order__qty">1x</span>
-              <div class="order__details">
-                <span class="order__name">Cappuccino</span>
-                <span class="order__desc">Light Foam</span>
+      <div class="wrapper">
+        <section class="order" id="order">
+          <h2 class="order__title">Items</h2>
+          <ul class="order__list">
+            <li class="order__item">
+              <div class="order__item-info">
+                <span class="order__qty">1x</span>
+                <div class="order__details">
+                  <span class="order__name">Cappuccino</span>
+                  <span class="order__desc">Light Foam</span>
+                </div>
               </div>
-            </div>
-            <div class="order__price-wrapper">
-              <span class="order__price">$4.50</span>
-            </div>
-          </li>
-
-          <li class="order__item">
-            <div class="order__item-info">
-              <span class="order__qty">1x</span>
-              <div class="order__details">
-                <span class="order__name">Espresso</span>
-                <span class="order__desc">Single Shot</span>
+              <div class="order__price-wrapper">
+                <span class="order__price">$0.00</span>
               </div>
-            </div>
-            <div class="order__price-wrapper">
-              <span class="order__price">$3.00</span>
-            </div>
-          </li>
-
-          <li class="order__item">
-            <div class="order__item-info">
-              <span class="order__qty">1x</span>
-              <div class="order__details">
-                <span class="order__name">Croissant</span>
-                <span class="order__desc">Butter</span>
+            </li>
+            <li class="order__item">
+              <div class="order__item-info">
+                <span class="order__qty">1x</span>
+                <div class="order__details">
+                  <span class="order__name">Espresso</span>
+                  <span class="order__desc">Single Shot</span>
+                </div>
               </div>
-            </div>
-            <div class="order__price-wrapper">
-              <span class="order__price">$2.75</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Payment Section -->
-      <section class="payment" id="payment">
-        <form class="payment__form" id="payment-form">
-          <fieldset class="payment__fieldset">
-            <legend class="payment__legend">Cardholder Information</legend>
-
-            <label for="card-name" class="payment__label"
-              >Name on the Card</label
-            >
-            <input
-              type="text"
-              id="card-name"
-              name="cardName"
-              class="payment__input payment__input--name"
-              autocomplete="cc-name"
-              required
-            />
-          </fieldset>
-
-          <fieldset class="payment__fieldset">
-            <legend class="payment__legend">Payment Details</legend>
-
-            <label for="card-number" class="payment__label">Card Number</label>
-            <input
-              type="text"
-              id="card-number"
-              name="cardNumber"
-              class="payment__input payment__input--card-number"
-              inputmode="numeric"
-              autocomplete="cc-number"
-              placeholder="1234 5678 9012 3456"
-              required
-            />
-
-            <label for="expiry" class="payment__label">Expiry Date</label>
-            <input
-              type="text"
-              id="expiry"
-              name="expiry"
-              class="payment__input payment__input--expiry"
-              inputmode="numeric"
-              autocomplete="cc-exp"
-              placeholder="MM/YY"
-              required
-            />
-          </fieldset>
-        </form>
-      </section>
+              <div class="order__price-wrapper">
+                <span class="order__price">$0.00</span>
+              </div>
+            </li>
+            <li class="order__item">
+              <div class="order__item-info">
+                <span class="order__qty">1x</span>
+                <div class="order__details">
+                  <span class="order__name">Croissant</span>
+                  <span class="order__desc">Butter</span>
+                </div>
+              </div>
+              <div class="order__price-wrapper">
+                <span class="order__price">$0.00</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- Payment Section -->
+        <section class="payment" id="payment">
+          <form class="payment__form" id="payment-form">
+            <fieldset class="payment__fieldset">
+              <legend class="payment__legend">Cardholder Information</legend>
+              <label for="card-name" class="payment__label"
+                >Name on the Card</label
+              >
+              <input
+                type="text"
+                id="card-name"
+                name="cardName"
+                class="payment__input payment__input--name"
+                autocomplete="cc-name"
+                required
+              />
+            </fieldset>
+            <fieldset class="payment__fieldset">
+              <legend class="payment__legend">Payment Details</legend>
+              <label for="card-number" class="payment__label"
+                >Card Number</label
+              >
+              <input
+                type="text"
+                id="card-number"
+                name="cardNumber"
+                class="payment__input payment__input--card-number"
+                inputmode="numeric"
+                autocomplete="cc-number"
+                placeholder="1234 5678 9012 3456"
+                required
+              />
+              <label for="expiry" class="payment__label">Expiry Date</label>
+              <input
+                type="text"
+                id="expiry"
+                name="expiry"
+                class="payment__input payment__input--expiry"
+                inputmode="numeric"
+                autocomplete="cc-exp"
+                placeholder="MM/YY"
+                required
+              />
+            </fieldset>
+          </form>
+        </section>
+      </div>
     </main>
     <table></table>
     <button type="submit">Place order</button>
