@@ -11,45 +11,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <main class="device">
       <header>
-        <div class="time"></div>
+        <div class="time">12.00</div>
         <div class="indicators">
           <img src="Icons.png" alt="Signal strength and battery indicators" />
         </div>
       </header>
-      <div class="display"></div>
+      <div class="display">12345</div>
       <div class="buttons">
         <!-- Row 1 -->
-        <button class="btn function">AC</button>
-        <button class="btn function">+/-</button>
-        <button class="btn function">%</button>
-        <button class="btn operator">÷</button>
+        <div class="row">
+          <button class="btn function">AC</button>
+          <button class="btn function">+/-</button>
+          <button class="btn function">%</button>
+          <button class="btn operator">÷</button>
+        </div>
 
         <!-- Row 2 -->
-        <button class="btn number">7</button>
-        <button class="btn number">8</button>
-        <button class="btn number">9</button>
-        <button class="btn operator">×</button>
+        <div class="row">
+          <button class="btn number">7</button>
+          <button class="btn number">8</button>
+          <button class="btn number">9</button>
+          <button class="btn operator">x</button>
+        </div>
 
         <!-- Row 3 -->
-        <button class="btn number">4</button>
-        <button class="btn number">5</button>
-        <button class="btn number">6</button>
-        <button class="btn operator">−</button>
+        <div class="row">
+          <button class="btn number">4</button>
+          <button class="btn number">5</button>
+          <button class="btn number">6</button>
+          <button class="btn operator">-</button>
+        </div>
 
         <!-- Row 4 -->
-        <button class="btn number">1</button>
-        <button class="btn number">2</button>
-        <button class="btn number">3</button>
-        <button class="btn operator">+</button>
+        <div class="row">
+          <button class="btn number">1</button>
+          <button class="btn number">2</button>
+          <button class="btn number">3</button>
+          <button class="btn operator">+</button>
+        </div>
 
         <!-- Row 5 -->
-        <button class="btn number zero">0</button>
-        <button class="btn number">.</button>
-        <button class="btn operator equals">=</button>
+        <div class="row">
+          <button class="btn number zero">0</button>
+          <button class="btn number dot">.</button>
+          <button class="btn operator equals">=</button>
+        </div>
       </div>
     </main>
   </body>
