@@ -21,6 +21,15 @@ body {
   background: #111;
 }
 
+main {
+  min-height: 690px;
+}
+
+#display {
+  height: 100px;
+  overflow: hidden;
+}
+
 div {
   color: #fff;
 }
@@ -145,8 +154,17 @@ button:active::after {
 }
 
 @media (max-width: 360px) {
-  .display {
-    font-size: 2.2rem;
+  main {
+    min-height: 520px;
+  }
+
+  #display {
+    height: 100px; 
+    margin-bottom: 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .zero {

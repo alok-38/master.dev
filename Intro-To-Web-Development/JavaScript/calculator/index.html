@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple IOS Calculator</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,55 +12,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <script src="time.js" defer></script>
+    <script src="calculator.js" defer></script>
   </head>
   <body>
     <main class="device">
       <header>
-        <div class="time">12.00</div>
+        <div class="time" id="time">12.00</div>
         <div class="indicators">
           <img src="Icons.png" alt="Signal strength and battery indicators" />
         </div>
       </header>
-      <div class="display">12345</div>
+      <div class="display" id="display"></div>
       <div class="buttons">
         <!-- Row 1 -->
         <div class="row">
-          <button class="btn function">AC</button>
-          <button class="btn function">+/-</button>
-          <button class="btn function">%</button>
-          <button class="btn operator">÷</button>
+          <button class="btn function" data-value="clear">AC</button>
+          <button class="btn function" data-value="negate">+/-</button>
+          <button class="btn function" data-value="%">%</button>
+          <button class="btn operator" data-value="/">÷</button>
         </div>
 
         <!-- Row 2 -->
         <div class="row">
-          <button class="btn number">7</button>
-          <button class="btn number">8</button>
-          <button class="btn number">9</button>
-          <button class="btn operator">x</button>
+          <button class="btn number" data-value="7">7</button>
+          <button class="btn number" data-value="8">8</button>
+          <button class="btn number" data-value="9">9</button>
+          <button class="btn operator" data-value="*">x</button>
         </div>
 
         <!-- Row 3 -->
         <div class="row">
-          <button class="btn number">4</button>
-          <button class="btn number">5</button>
-          <button class="btn number">6</button>
-          <button class="btn operator">-</button>
+          <button class="btn number" data-value="4">4</button>
+          <button class="btn number" data-value="5">5</button>
+          <button class="btn number" data-value="6">6</button>
+          <button class="btn operator" data-value="-">-</button>
         </div>
 
         <!-- Row 4 -->
         <div class="row">
-          <button class="btn number">1</button>
-          <button class="btn number">2</button>
-          <button class="btn number">3</button>
-          <button class="btn operator">+</button>
+          <button class="btn number" data-value="1">1</button>
+          <button class="btn number" data-value="2">2</button>
+          <button class="btn number" data-value="3">3</button>
+          <button class="btn operator" data-value="+">+</button>
         </div>
 
         <!-- Row 5 -->
         <div class="row">
-          <button class="btn number zero">0</button>
-          <button class="btn number dot">.</button>
-          <button class="btn operator equals">=</button>
+          <button class="btn number zero" data-value="0">0</button>
+          <button class="btn number dot" data-value=".">.</button>
+          <button class="btn operator equals" data-value="equals">=</button>
         </div>
       </div>
     </main>
