@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.device {
+  background-color: #000;
+  max-width: 430px;
+}
+
+button {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    cursor: pointer;
+}
