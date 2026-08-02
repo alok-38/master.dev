@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <button class="event-button">Click me!</button>
+    <input type="text" placeholder="Give into me" class="input-to-copy" />
+    <p class="p-to-copy-to">Nothing has happened yet</p>
+    <script>
+      const buttonEl = document.querySelector(".event-button");
+      buttonEl.addEventListener("click", () => {
+        alert("Button click detected!");
+      });
+      const inputEl = document.querySelector(".input-to-copy");
+      const paragraphEl = document.querySelector(".p-to-copy-to");
+      inputEl.addEventListener("keyup", () => {
+        paragraphEl.textContent = inputEl.value;
+      });
+    </script>
+  </body>
+</html>
