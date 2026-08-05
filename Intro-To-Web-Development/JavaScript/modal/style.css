@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the open button */
+.app-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Base button */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* Open button */
+.btn-open {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Close button */
+.btn-close {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* 🔵 HOVER (mouse over) */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🟣 FOCUS (keyboard navigation) */
+.btn:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.4);
+  outline-offset: 2px;
+}
+
+/* 🔴 ACTIVE (click / press) */
+.btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🎨 Slight color shifts on hover */
+.btn-open:hover {
+  background-color: #0056b3;
+}
+
+.btn-close:hover {
+  background-color: #a71d2a;
+}
+
+/* 💡 Optional: disabled state */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Modal overlay (background) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide element */
+.hidden {
+  display: none;
+}
+
+/* Modal container */
+.modal-container {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Sections */
+.modal-header {
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 18px;
+}
+
+.modal-body {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
