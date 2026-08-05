@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capitalize Challenge</title>
+  </head>
+  <body>
+    <script>
+      const myString = "developer";
+      /*
+        Use the charAt() method as well as
+        string[index], toUpperCase() and
+        substring() or slice()
+        */
+      // Extract the first letter
+      const firstLetter = myString.charAt(0);
+      //   Capitalize the first letter
+      const capitalized = firstLetter.toUpperCase();
+      //   Replace the first letter of myString
+      const result = capitalized + myString.slice(1);
+      console.log(result);
+    </script>
+  </body>
+</html>
