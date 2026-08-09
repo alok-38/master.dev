@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      let character = prompt("Enter a letter");
+      let timesToRepeat = Number(prompt("How many times to repeat?"));
+
+      while (timesToRepeat > 0) {
+        console.log(character);
+        timesToRepeat--;
+      }
+      // Label Odd and Even Numbers
+      for (let number = 0; number <= 10; number++) {
+        if (number % 2 == 0) {
+          console.log(`${number} even`);
+        } else {
+          console.log(`${number} odd`);
+        }
+      }
+    </script>
+  </body>
+</html>
