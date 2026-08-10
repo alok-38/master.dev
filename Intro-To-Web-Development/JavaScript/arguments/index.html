@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sumCallback(a, b, callback) {
+        callback(a + b);
+      }
+      function handleSum(sum) {
+        console.log(sum);
+      }
+      sumCallback(1, 2, handleSum);
+      function printVariable(params) {
+        console.log(params);
+      }
+      //   Create a new function that takes two parameters
+      // 1. name
+      // 2. callback that prints out what we pass to it
+      function parapetrized(name, printVariable) {
+        return `Hello, ${name}`;
+      }
+      console.log(parapetrized("Alok"));
+    </script>
+  </body>
+</html>
