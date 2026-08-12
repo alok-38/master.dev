@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions as arguments</title>
+  </head>
+  <body>
+    <script>
+      function greet(name) {
+        console.log(`Hello ${name}`);
+      }
+      function processUser(callback) {
+        callback("Alok");
+      }
+      processUser(greet);
+      function calculate(a, b, operation) {
+        return operation(a, b);
+      }
+      const add = (a, b) => a + b;
+      const multiply = (a, b) => a * b;
+      console.log(calculate(5, 3, add));
+      console.log(calculate(5, 3, multiply));
+    </script>
+  </body>
+</html>
