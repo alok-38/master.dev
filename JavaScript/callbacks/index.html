@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculate(a, b, operation) {
+        return operation(a, b);
+      }
+      function add(x, y) {
+        return x + y;
+      }
+      function subtract(x, y) {
+        return x - y;
+      }
+      console.log(calculate(5, 3, add));
+      console.log(calculate(5, 3, subtract));
+      function nameFunction(firstName, lastName, callback) {
+        let fullName = `${firstName} ${lastName}`;
+
+        return callback(fullName);
+      }
+
+      function hello(fullName) {
+        return `Hello ${fullName}`;
+      }
+
+      console.log(nameFunction("John", "Doe", hello));
+    </script>
+  </body>
+</html>
