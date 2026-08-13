@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function say() {
+        const result = "Hi";
+        console.log(result);
+      }
+      const result = "Bye";
+      say();
+      console.log(result);
+      function some() {
+        // New scope created here
+        const x = 5;
+        return x;
+      }
+      // Global scope
+      const x = 10;
+      console.log(some());
+      // Global scope
+      const a = 1;
+      function func() {
+        const b = 2;
+        console.log(a);
+        console.log(b);
+      }
+      console.log(func());
+      // Global scope
+      const name = "Kyle";
+      function sayHi() {
+        console.log(name);
+      }
+      sayHi();
+      function someFunction() {
+        // New block scope
+        const x = 3;
+      }
+      if (true) {
+        const x = 1;
+      }
+      {
+        const x = 2;
+      }
+    </script>
+  </body>
+</html>

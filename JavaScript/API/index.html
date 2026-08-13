@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createAPIClient(baseURL) {
+        return function (endpoint) {
+          return fetch(baseURL + endpoint);
+        };
+      }
+      const githubAPI = createAPIClient("https://api.github.com");
+      githubAPI("/users");
+      githubAPI("/repos");
+    </script>
+  </body>
+</html>

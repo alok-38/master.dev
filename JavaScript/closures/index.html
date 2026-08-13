@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createGreeting(greeting) {
+        return function (name) {
+          return `${greeting}, ${name}`;
+        };
+      }
+
+      const sayHello = createGreeting("Hello");
+      const sayHi = createGreeting("Hi");
+
+      console.log(sayHello("John"));
+      console.log(sayHi("Sarah"));
+    </script>
+  </body>
+</html>
