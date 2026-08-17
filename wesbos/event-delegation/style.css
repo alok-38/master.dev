@@ -1,0 +1,21 @@
+body {
+  background: url("oh-la-la.jpeg") center / cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 60px;
+  height: 60px;
+  fill: #4a3b2a;
+  display: block;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 350px;
+  background-color: #f3eed9;
+}
