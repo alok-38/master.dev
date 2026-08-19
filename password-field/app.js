@@ -6,7 +6,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   if (!passwordField.value.trim()) {
-    passwordField.style.borderColor = "red";
+    passwordField.style.border = "2px solid red";
     passwordField.focus();
     return;
   }
@@ -14,4 +14,9 @@ form.addEventListener("submit", (event) => {
   passwordField.style.borderColor = "";
 
   // Continue with login
+});
+
+passwordDisplayIcon.addEventListener("click", () => {
+  const isHidden = password.type === "password";
+  passwordField.type = isHidden ? "text" : "password";
 });

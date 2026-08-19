@@ -105,7 +105,8 @@ body {
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     background-color 0.2s ease;
-    padding: .5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .login__password-input:hover {
@@ -314,4 +315,16 @@ button {
 
 .login__password-icon {
   cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.login__password-icon:hover {
+  transform: scale(1.08);
+  opacity: 0.8;
+}
+
+.login__password-icon:active {
+  transform: scale(0.92);
+  opacity: 0.6;
 }
