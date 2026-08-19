@@ -6,32 +6,49 @@
     <link rel="icon" href="https://fav.farm/🖥" />
     <title>Simple password validation</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <main>
-      <h1>Enter your password</h1>
-      <form>
-        <div>
-          <figure>
-            <img src="alok.jpg" alt="alok" />
-          </figure>
-          <div>
-            <span>Business Account</span>
-            <h2>Sarah Bills</h2>
+    <main class="login">
+      <form class="login__form">
+        <h1 class="login__title">Enter your password</h1>
+        <section>
+          <div class="login__account">
+            <figure class="login__avatar">
+              <img class="login__avatar-image" src="alok.jpg" alt="alok" />
+            </figure>
+            <div class="login__account-info">
+              <span class="login__account-type">Business Account</span>
+              <h2 class="login__account-name">Sarah Bills</h2>
+            </div>
           </div>
-        </div>
-        <label for="password">Password</label>
-        <div>
-          <input type="password" />
-          <img src="eye.svg" alt="eye" />
-        </div>
-        <div>
-          <div>
-            <span>Stay signed in</span>
+          <div class="login__field">
+            <label class="login__label" for="password">Password</label>
+            <div class="login__password">
+              <input
+                class="login__password-input"
+                type="password"
+                id="password"
+              />
+              <img
+                class="login__password-icon"
+                src="eye.svg"
+                alt="Show password"
+              />
+            </div>
           </div>
-          <button type="submit">Continue</button>
-        </div>
-        <button>Reset password</button>
+          <div class="login__actions">
+            <div class="login__remember">
+              <label class="toggle">
+                <input class="toggle__input" type="checkbox" />
+                <span class="toggle__slider"></span>
+              </label>
+              <span class="login__remember-text">Stay signed in</span>
+            </div>
+            <button class="login__submit" type="submit">Continue</button>
+          </div>
+          <button class="login__reset" type="button">Reset password</button>
+        </section>
       </form>
     </main>
   </body>
