@@ -18,4 +18,77 @@ svg {
 .wrapper {
   max-width: 350px;
   background-color: #f3eed9;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.wrapper:hover {
+  box-shadow: 0 8px 20px rgba(74, 59, 42, 0.12);
+}
+
+h1 {
+  text-align: center;
+  color: #4a3b2a;
+}
+
+/* Text input */
+input[type="text"] {
+  height: 35px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0 0.75rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #4a3b2a;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+input[type="text"]:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+input[type="text"]:focus {
+  border-color: #4a3b2a;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(74, 59, 42, 0.15);
+}
+
+/* Submit button */
+input[type="submit"] {
+  height: 35px;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #4a3b2a;
+  color: #fff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #604d38;
+  box-shadow: 0 4px 10px rgba(74, 59, 42, 0.25);
+  transform: translateY(-1px);
+}
+
+input[type="submit"]:focus-visible {
+  outline: 3px solid rgba(74, 59, 42, 0.3);
+  outline-offset: 2px;
+}
+
+input[type="submit"]:active {
+  background-color: #392d21;
+  transform: translateY(2px) scale(0.97);
+  box-shadow: none;
 }
