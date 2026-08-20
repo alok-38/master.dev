@@ -31,10 +31,11 @@ body {
 }
 
 .counter__display {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem;
 }
 
 .counter__title {
@@ -48,5 +49,109 @@ body {
 }
 
 .counter__value {
-    font-size: 7rem;
+  font-size: 7rem;
+  font-weight: 500;
+  height: 170px;
+}
+
+.counter__reset-button {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.counter__reset-icon {
+  font-size: 2rem;
+
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+.counter__reset-button:hover {
+  transform: scale(1.08);
+}
+
+/* Rotate icon on hover */
+.counter__reset-button:hover .counter__reset-icon {
+  transform: rotate(180deg);
+}
+
+/* Press / click */
+.counter__reset-button:active {
+  transform: scale(0.92);
+}
+
+/* Optional: make the icon spin while pressing */
+.counter__reset-button:active .counter__reset-icon {
+  transform: rotate(360deg);
+}
+
+.counter__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.counter__button {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #4f5b2c;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.12s ease,
+    background-color 0.2s ease,
+    box-shadow 0.12s ease;
+}
+
+.counter__icon {
+  font-size: 1.5rem;
+
+  transition: transform 0.2s ease;
+}
+
+/* Hover */
+.counter__button:hover {
+  background-color: #4f5b2c;;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Press */
+.counter__button:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyboard focus */
+.counter__button:focus-visible {
+  outline: 3px solid #4d90fe;
+  outline-offset: 3px;
+}
+
+.fa-minus,
+.fa-plus {
+    color: #dfff00;
 }
