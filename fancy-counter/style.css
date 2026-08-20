@@ -52,6 +52,7 @@ body {
   font-size: 7rem;
   font-weight: 500;
   height: 170px;
+  color: #4f5b2c;
 }
 
 .counter__reset-button {
