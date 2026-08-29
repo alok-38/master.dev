@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Analytics</title>
+    <link rel="icon" href="https://fav.farm/🖥" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">
+        <span class="header__brand">WORD</span>ALYTICS
+      </h1>
+    </header>
+
+    <main class="analytics">
+      <section class="analytics__input" id="text-input">
+        <textarea name="" id="textarea" placeholder="Enter your text"></textarea>
+      </section>
+
+      <aside class="analytics__stats" id="stats">
+        <div class="stats__item">
+          <h2 class="stats__title" id="word-count"></h2>
+          <span class="stats__value" id="word-count-value"></span>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__title" id="character-count"></h2>
+          <span class="stats__value" id="character-count-value"></span>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__title" id="sentence-count"></h2>
+          <span class="stats__value" id="sentence-count-value"></span>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__title" id="paragraph-count"></h2>
+          <span class="stats__value" id="paragraph-count-value"></span>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">&copy; Alok. All rights reserved</div>
+
+      <div class="footer__status">
+        Last checked limits:
+        <span class="footer__days" id="days-ago"></span>
+        days ago.
+      </div>
+    </footer>
+  </body>
+</html>
