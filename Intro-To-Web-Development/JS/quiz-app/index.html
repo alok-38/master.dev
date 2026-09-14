@@ -3,35 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>JavaScript Quiz</title>
+
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
 
   <body>
-    <h1>Welcome to my JS challenge!</h1>
+    <main class="quiz" id="quiz">
+      <div class="quiz__wrapper">
+        <h1 class="quiz__title">Welcome to my JS challenge!</h1>
 
-    <!-- Progress: 3 / 10 -->
-    <div class="progress"><span>3</span> / <span>10</span></div>
+        <!-- Progress -->
+        <section class="quiz__progress-section" aria-label="Quiz progress">
+          <ol class="progress-bar" id="question-progress">
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button progress-bar__button--completed"
+                aria-label="Question 1"
+              >
+                1
+              </button>
+            </li>
 
-    <!-- Question progress: 1–10 -->
-    <ol class="progress-bar">
-      <li class="completed"></li>
-      <li class="completed"></li>
-      <li class="current"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button progress-bar__button--completed"
+                aria-label="Question 2"
+              >
+                2
+              </button>
+            </li>
 
-    <!-- Score -->
-    <div class="score">
-      <span class="wrong">✕ 1</span>
-      <span class="correct">✓ 1</span>
-    </div>
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button progress-bar__button--current"
+                aria-current="step"
+                aria-label="Question 3"
+              >
+                3
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 4"
+              >
+                4
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 5"
+              >
+                5
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 6"
+              >
+                6
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 7"
+              >
+                7
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 8"
+              >
+                8
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 9"
+              >
+                9
+              </button>
+            </li>
+
+            <li class="progress-bar__item">
+              <button
+                type="button"
+                class="progress-bar__button"
+                aria-label="Question 10"
+              >
+                10
+              </button>
+            </li>
+          </ol>
+
+          <!-- Current progress -->
+          <div class="quiz__progress" id="quiz-progress">
+            <span class="quiz__progress-current">3</span>
+            /
+            <span class="quiz__progress-total">10</span>
+          </div>
+
+          <!-- Score -->
+          <div class="score" id="quiz-score">
+            <span class="score__item score__item--wrong"> ✕ 1 </span>
+
+            <span class="score__item score__item--correct"> ✓ 1 </span>
+          </div>
+        </section>
+
+        <!-- Question -->
+        <section
+          class="quiz__question-section"
+          aria-labelledby="question-title"
+        >
+          <h2 class="quiz__question-title" id="question-title">
+            Question
+            <span class="quiz__question-number"></span>
+          </h2>
+
+          <p class="quiz__question-text"></p>
+        </section>
+
+        <!-- Answers -->
+        <section class="quiz__answers-section" aria-label="Answer options">
+          <ol class="answers">
+            <li class="answers__item">
+              <button type="button" class="answers__button"></button>
+            </li>
+
+            <li class="answers__item">
+              <button type="button" class="answers__button"></button>
+            </li>
+
+            <li class="answers__item">
+              <button type="button" class="answers__button"></button>
+            </li>
+
+            <li class="answers__item">
+              <button type="button" class="answers__button"></button>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
