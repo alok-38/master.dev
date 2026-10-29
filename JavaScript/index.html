@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Counter App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="hero.png" alt="hero image" />
+      <h1>Get Counting</h1>
+      <button>Count is <span></span></button>
+    </div>
+    <script>
+      const spanEl = document.querySelector('span');
+      const buttonEl = document.querySelector('button');
+      let number = 0;
+      spanEl.textContent = number;
+      buttonEl.addEventListener('click', () => {
+        spanEl.textContent = ++number;
+      })
+    </script>
+  </body>
+</html>
