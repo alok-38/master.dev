@@ -1,0 +1,199 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff, #daf0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #171819;
+  font-family: Arial, sans-serif;
+}
+
+/* wrapper */
+.wrapper {
+  max-width: 475px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #17181a, #17181a);
+  border-radius: 2.44rem;
+}
+
+/* Calculator Screen */
+.screen {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  padding: 0 35px 20px;
+
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+
+  overflow: hidden;
+}
+
+/* =========================
+   Calculator Block
+========================= */
+
+.calculator {
+  width: min(100%, 480px);
+  padding: clamp(20px, 5vw, 35px);
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  grid-template-areas:
+    "e mu sin deg"
+    "clear backspace divide multiply"
+    "seven eight nine subtract"
+    "four five six plus"
+    "one two three plus"
+    "zero zero decimal equals";
+
+  grid-template-rows:
+    clamp(48px, 12vw, 54px)
+    repeat(5, clamp(65px, 17vw, 83px));
+
+  gap: clamp(12px, 4.5vw, 29px) clamp(12px, 5.5vw, 27px);
+}
+
+/* =========================
+   Calculator Button
+========================= */
+
+.calculator__button {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: clamp(14px, 4vw, 21px);
+
+  background-color: #2d2f34;
+  color: #2196f3;
+
+  font-size: clamp(24px, 7vw, 42px);
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.calculator__button:hover {
+  background-color: #393c42;
+}
+
+.calculator__button:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   Special Buttons
+========================= */
+
+.calculator__button--special {
+  grid-area: auto;
+
+  border-radius: 50px;
+  font-size: clamp(18px, 5vw, 25px);
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.calculator__button--action {
+  background-color: #626262;
+  color: #bdbdbd;
+}
+
+.calculator__button--action:hover {
+  background-color: #747474;
+}
+
+/* =========================
+   Operator Buttons
+========================= */
+
+.calculator__button--operator {
+  background-color: #0560b5;
+  color: #2196f3;
+}
+
+.calculator__button--operator:hover {
+  background-color: #0873d4;
+}
+
+/* =========================
+   Plus Button
+========================= */
+
+.calculator__button--plus {
+  grid-area: plus;
+}
+
+/* =========================
+   Zero Button
+========================= */
+
+.calculator__button--zero {
+  grid-area: zero;
+}
+
+/* =========================
+   Equals Button
+========================= */
+
+.calculator__button--equals {
+  grid-area: equals;
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.calculator__button--equals:hover {
+  background-color: #1687e5;
+}
+
+/* =========================
+   Accessibility
+========================= */
+
+.calculator__button:focus-visible {
+  outline: 2px solid #80c4ff;
+  outline-offset: 3px;
+}
+
+/* =========================
+   Small Screens
+========================= */
+
+@media (max-width: 360px) {
+  .calculator {
+    padding: 16px;
+    gap: 12px;
+    grid-template-rows:
+      45px
+      repeat(5, clamp(55px, 17vw, 65px));
+  }
+
+  .calculator__button {
+    font-size: 25px;
+  }
+}
